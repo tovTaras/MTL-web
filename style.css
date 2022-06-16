@@ -1,0 +1,290 @@
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+body{
+    margin: 0;
+    font-family: 'Dongle', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgb(22, 22, 22);
+}
+*,
+*:before,
+*::after
+{  
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url(../zite/images/grassy-lawn-4k-green-grass-texture-macro-green-background.jpg) center no-repeat;
+    background-size: cover;
+    /* -webkit-mask: radial-gradient(circle, #0000 150px, rgba(0, 0, 0, 0.9) 160px);
+    backdrop-filter:blur(10px); */
+}
+.intro__title {
+font-size: 150px;
+color: white;
+font-weight: 700;
+text-transform: uppercase;
+line-height: 1;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_logo {
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+}
+.nav__link {
+    font-size: 25px;
+    text-transform: uppercase;
+
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 8px;
+
+    color: white;
+    text-decoration: none;
+    transition: color .2s linear;
+
+    position: relative;
+}
+.nav__link:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    opacity: 0;
+
+    background-color: rgb(229, 197, 110);
+    
+    top: 100%;
+    left: 0;
+    z-index: 1;
+     
+    transition: opacity .1s linear;
+
+}
+.nav__link:hover {
+    color: rgb(222, 199, 135);
+}
+.nav__link:hover:after {
+   opacity: 1;
+}
+
+.button {
+    display: inline-block;
+    vertical-align: top;
+    
+    padding: 3px 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    border: 3px solid white;
+
+    transition: background .1s linear, color .1s linear;
+
+}
+.button:hover {
+    background-color: white;
+    color: rgb(22, 22, 22);
+}
+.section {
+    text-align: center;
+    padding: 80px 0;
+}
+.section__header {
+
+    width: 100px;
+    max-width: 950px;
+    margin: 0 auto 40px;
+}
+.section__title {
+    font-size: 180px;
+    text-transform: uppercase;
+}
+.section__title2 {
+    font-size: 100px;
+}
+.section__text {
+    font-size: 60px;
+}
+
+.about {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.about__item {
+    width: 30%;
+}
+.about__img{
+    font-size: 30px;
+}
+.contactform {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+}
+.contactform:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(images/Ruka.jpg);
+    background-size: cover;
+    z-index: -1;
+    filter: blur(0px);
+}
+.contactbox {
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+
+}
+.left {
+    height: 100%;
+    background: url(images/csm_slide2_cedbf16e45.jpg);
+    background-size: cover;
+}
+.right {
+    padding: 25px 40px;
+}
+.contakti {
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+.contakti:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;    
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+
+}
+.field {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 21px;
+    font-family: 'Dongle', sans-serif;
+    margin-bottom: 22px;    
+    transition: .3s;
+}
+.field:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.field:focus {
+    background-color: white;
+    border: 2px solid rgba(30, 85, 250, 0.47);
+}
+.area {
+    min-height: 150px;
+}
+.btn {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: #2ecc71;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: white;
+    transition: .3s;
+}
+.btn::after{
+    content: "Send";
+    display: block;
+}
+.btn:hover {
+    background-color: #27ae60;
+
+}
+.btn:active, .btn:focus:after {
+    content: "Sent!, thank you <3";
+    display: block;
+}
+@media screen and (max-width: 880px) {
+    .contactbox {
+        grid-template-columns: 1fr;
+    }
+    .left {
+        height: 200px;
+    }
+}
+html {
+    scroll-behavior: smooth;
+  }
+.top_scroll {
+    font-size: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    background: #5ca95a;
+    width: 60px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 3px;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: background .1s linear, color .1s linear;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+}
+.top_scroll:hover {
+    background-color: rgb(214, 208, 208);
+}
